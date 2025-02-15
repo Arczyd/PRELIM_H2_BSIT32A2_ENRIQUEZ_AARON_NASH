@@ -1,10 +1,25 @@
-import "./styles.css";
+import React from "react";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Hobbies from "./components/Hobbies";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import "./App.css";
 
-export default function App() {
+function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div>
+      <Navbar />
+      <Home />
+      <About />
+      <Skills />
+      <Hobbies />
+      <Contact />
+      <Footer />
     </div>
   );
 }
+
+export default App;
